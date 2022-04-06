@@ -1,0 +1,18 @@
+clear;
+clc;
+ Maximum_Limit = 10;
+S = 0;
+for t = 0:Maximum_Limit -1
+x(n+1)= -2^n;
+ // Input some bounded value
+S = S+(x^3)(n);
+end
+if (S >Maximum_Limit)
+disp("Eventhough input is bounded output isunbounded ")
+disp("The given system is unstable ");
+disp("NS =");
+S
+else
+disp("The given system is stable ");
+disp("S");
+end
